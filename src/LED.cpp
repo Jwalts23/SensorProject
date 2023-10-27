@@ -1,8 +1,6 @@
 #include <LED.h>
 
 
-    
-
     LED::LED(uint8_t Pin){
         pin = Pin;
     }
