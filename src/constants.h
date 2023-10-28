@@ -3,8 +3,16 @@
 
 // #pragma once
 
-#define RED_PIN  13
-#define YELLOW_PIN 12
-#define GREEN_PIN  11
+// led Pins
+#define RED_PIN  11
+#define YELLOW_PIN 10
+#define GREEN_PIN  9
 
+// Ultrasonic pins
+#define ECHO_PIN 5
+#define TRIGGER_PIN 6
+
+// photo resistor pins
  #define PHOTORESISTOR_PIN A0
+
+ #define BUTTON_PIN 2
