@@ -7,7 +7,8 @@ class Button{
         void init();
         int read();
         bool isHigh();
+        bool buttonPressed();
         
-    private:
+    protected:
         uint8_t pin;
 };

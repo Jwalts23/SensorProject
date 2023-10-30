@@ -20,3 +20,15 @@ bool Button::isHigh(){
     return isHigh;
 }
 
+bool Button::buttonPressed() // Taster abfragen auf drücken des Buttons
+{
+  static boolean lastButtonState;
+  boolean buttonState=read();
+  if (buttonState!=lastButtonState) // Status hat sich geändert
+  {
+    lastButtonState=buttonState;  // letzten Status merken
+    if (buttonState==HIGH) return true; // Status hat sich auf "gedrückt" geändert
+  }
+  return false;
+}
+
